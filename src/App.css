@@ -1,0 +1,156 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Add padding to body to prevent overlap with header */
+body {
+  padding-top: 140px; /* Increase padding to accommodate taller header */
+  background-color: #f8f9fa; /* updated: removed background image and added solid color */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure the header starts from the left */
+  width: 100%;
+  z-index: 1000;
+  background: #ffffff; /* updated: professional white background */
+  border-bottom: 1px solid #eaeaea; /* subtle bottom border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack heading and details vertically */
+  align-items: center; /* Vertically center the content */
+  padding: 30px 0; /* increased padding for more space for header text */
+}
+
+.app-heading {
+  color: #333333; /* updated: darker text for professional look */
+  margin: 0;
+  padding: 0; /* remove left padding */
+  text-align: center; /* center text */
+  font-size: 1.8em; /* slightly reduced font size for a cleaner look */
+  line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.project-details {
+  color: #555555; /* updated: changed text to a professional dark grey */
+  text-align: center;
+  font-size: 1.2em; /* slightly larger font size */
+  margin-top: 5px;
+}
+
+.project-highlight {
+  color: #0056b3; /* updated to a professional deep blue */
+  font-weight: bold;
+}
+
+/* New overlay card style */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* New styles for front-end input and output elements */
+.tweet-input {
+  width: 500px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #1da1f2; /* Twitter blue border */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+.tweet-input:focus {
+  border-color: #0d8ddb;
+  outline: none;
+}
+
+.prediction-box {
+  width: 300px; /* reduced width */
+  height: 70px; /* reduced height */
+  font-size: 16px;
+  padding: 10px; /* less padding */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #333;
+  margin: auto;
+}
+
+.twitter-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  margin-top: 200px; /* increased space between header and input box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1da1f2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+button:hover {
+  background-color: #0d8ddb;
+}
+
+.output-container {
+  text-align: center;
+  margin-top: 20px; /* extra space above output */
+  margin-bottom: 20px; /* reduced bottom margin */
+}
+.output-container_para{
+  color: #333;
+}
