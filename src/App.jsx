@@ -10,7 +10,7 @@ function App() {
 
   const handlePredict = async () => {
     try {
-      const response = await fetch("http://localhost:5000/predict", {
+      const response = await fetch("https://web-production-feb5e.up.railway.app/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: inputText }),
@@ -30,7 +30,7 @@ function App() {
 
   const handleDownload = async () => {
     try {
-      const response = await fetch("http://localhost:5000/download", {
+      const response = await fetch("https://web-production-feb5e.up.railway.app/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: inputText }),
